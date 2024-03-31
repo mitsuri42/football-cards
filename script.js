@@ -28,7 +28,7 @@ const myFavoriteFootballTeam = {
       isCaptain: false,
       nickname: null,
     },
-     {
+    {
       name: "Ricardo Bochini",
       position: "midfielder",
       number: 3,
@@ -207,23 +207,16 @@ playersDropdownList.addEventListener("change", (e) => {
       setPlayerCards(players.filter((player) => player.position === "forward"));
       break;
     case "midfielder":
-      setPlayerCards(
-        players.filter((player) => player.position === "midfielder")
-      );
+      setPlayerCards(players.filter((player) => player.position === "midfielder"));
       break;
     case "defender":
-      setPlayerCards(
-        players.filter((player) => player.position === "defender")
-      );
+      setPlayerCards(players.filter((player) => player.position === "defender"));
       break;
     case "goalkeeper":
-      setPlayerCards(
-        players.filter((player) => player.position === "goalkeeper")
-      );
+      setPlayerCards(players.filter((player) => player.position === "goalkeeper"));
       break;
 
-    default: 
+    default:
       setPlayerCards();
-
   }
 });
